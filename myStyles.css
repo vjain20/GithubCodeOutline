@@ -1,0 +1,80 @@
+#code-outline-container {
+  position: fixed;
+  top: 100px;
+  left: calc(100vw - 300px);
+  padding: 5px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius:3px;
+  box-shadow: 3px 3px 5px 0px rgba(133,131,133,1);
+  list-style: none;
+ 
+  
+  z-index:20;
+}
+
+#code-outline-list {
+	 overflow: auto;
+	 z-index:20;
+	 height: 270px;
+}
+
+#co-header {
+	text-align: center;
+	border-bottom: 1px solid gray;
+	cursor: move;
+}
+
+#code-outline-list img {
+	max-width:3%;
+	max-height: 3%;
+}
+
+.entity-name {
+	margin-left: 5px;
+}
+
+.return-type {
+	color: gray;
+}
+
+.co-indicator {
+	line-height:15px;
+	font-size: 10px;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    text-align: center;
+    margin-right: 5px;
+    color: #282828;
+	border-radius: 50%;
+}
+
+
+.co-indicator-fn {
+    background-color: #72d375;
+	
+}
+
+.co-indicator-C {
+    background-color: #5db3fe;
+}
+
+.co-indicator-I {
+    background-color: #fcbb96;
+}
+
+.outline-item {
+	cursor:pointer;
+}
+
+.co-highlighted {
+	background-color: #fff;
+	animation-name: highlight;
+    animation-duration: 3s;
+}
+
+@keyframes highlight {
+  from {background-color: yellow;}
+  to {background-color: #fff;}
+}
